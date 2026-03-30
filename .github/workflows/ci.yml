@@ -36,9 +36,9 @@ jobs:
       - name: Build Docker image
         run: |
          docker build -t ${{ secrets.DOCKER_USERNAME }}/devopsapp:$VERSION .
-         docker build -t ${{ secrets.DOCKER_USERNAME }}/devopsapp:v1.4 .
+         docker build -t ${{ secrets.DOCKER_USERNAME }}/devopsapp .
 
       - name: Push Docker image
         run: |
          docker push ${{ secrets.DOCKER_USERNAME }}/devopsapp:$VERSION
-         docker push ${{ secrets.DOCKER_USERNAME }}/devopsapp:v1.4
+         docker push ${{ secrets.DOCKER_USERNAME }}/devopsapp
