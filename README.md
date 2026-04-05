@@ -3,7 +3,7 @@
 A production-ready Flask application deployed on Oracle Cloud with automated CI/CD pipeline.
 
 ## Live Demo
-🌐 https://mydevopsapp.duckdns.org
+🌐 https://mydev0psapp.duckdns.org
 
 ## Architecture
 GitHub Push → GitHub Actions → Docker Hub → Webhook → Oracle Cloud VM → Nginx → Flask App
